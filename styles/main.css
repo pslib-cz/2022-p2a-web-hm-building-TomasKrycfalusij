@@ -14,13 +14,12 @@ p
 {
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     display: flex;
-    background-image: url(/media/pageheader-1920w.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 100px;
-    background-size: auto 30%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/pageheader-1920w.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center 20px;
+    background-size: cover, cover;
 }
 
 body
@@ -36,13 +35,14 @@ body
     background-color: white;
     width: 100%;
     height: 100px;
-    padding: 0px 20px;
+    padding-left: 10px;
+    padding-right: 20px;
     position: relative;
 }
 
 .navbar img
 {
-    height: 50%;
+    height: 40%;
     max-width: 100%;
     object-fit: scale-down;
 }
@@ -103,7 +103,6 @@ body
 .line
 {
     margin: 3px 0px;
-    display: block;
     content: "";
     width: 100%;
     height: 10px;
