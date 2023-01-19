@@ -1,11 +1,11 @@
 *
 {
     font-size: 12px;
+    font-family: 'Open Sans';
 }
 
 body
 {
-    font-family: 'Open Sans';
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ p
 
 /* ---------- END OF HEADER ---------- */
 
-.header
+.index-header
 {
     position: relative;
     margin: 0;
@@ -79,7 +79,8 @@ body
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .hamburger-menu:hover .menu
@@ -100,6 +101,7 @@ body
 .menu ul li span
 {
     font-weight: 700;
+    font-size: 1em;
 }
 
 .menu ul
@@ -239,7 +241,7 @@ body
     margin: 0;
 }
 
-.presvedcit_se a
+.button
 {
     padding: 1em 2em;
     color: white;
@@ -247,8 +249,12 @@ body
     width: min-content;
     white-space: nowrap;
     text-decoration: none;
-    background-color: #EB6C27;
     margin-top: 1em;
+}
+
+.button--orange
+{
+    background-color: #EB6C27;
 }
 
 /* ----- end of presvedcit se ----- */
@@ -263,8 +269,8 @@ body
     flex-direction: column;
     width: calc(100% - 2em);
     padding: 1em;
+    margin-bottom: 3em;
 }
-
 
 .index-gallery
 {
@@ -276,9 +282,11 @@ body
     width: 100%;
 }
 
-
 .reference__img
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: min-content;
 }
@@ -292,9 +300,54 @@ body
 
 .reference__img h3
 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
 
+.reference__img p
+{
+    font-size: 1em;
+    margin-bottom: 2em;
 }
 
 /* ----- end of reference ----- */
 
 /* ---------- END OF MAIN ---------- */
+
+/* ---------- START OF FOOTER ---------- */
+
+.index-footer
+{
+    height: 300px;
+    background-color: #EB6C27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-footer h2
+{
+    margin-top: 3em;
+    color: white
+}
+
+.index-footer p
+{
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.index-footer a
+{
+    margin-top: 3em;
+}
+
+.button--index__footer
+{
+    color:#EB6C27;
+    background-color: white;
+    font-size: 1.25em;
+}
+
+/* ---------- END OF FOOTER ---------- */
