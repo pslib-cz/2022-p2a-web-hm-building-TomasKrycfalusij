@@ -16,7 +16,7 @@ p
 
 /* ---------- END OF HEADER ---------- */
 
-.bg-img
+.header
 {
     position: relative;
     margin: 0;
@@ -155,33 +155,32 @@ body
 
 /* ---------- START OF MAIN ---------- */
 
-.main-article
+.index-article
 {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 0;
     margin: 0;
-    justify-items: center;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 2em);
+    padding: 1em;
 }
 
-.main-figure
+.index-figure
 {
     display: flex;
     align-items: left;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: 20px 0;
 }
 
-.main-figure h2
+.index-figure h3, h2
 {
     font-size: 1.75em;
 }
 
-.main-figure a
+.index-figure a
 {
     padding: 1em;
     border: dashed #EB6C27 1px;
@@ -189,10 +188,11 @@ body
     font-weight: bold;
     width: min-content;
     white-space: nowrap;
-    margin: 20px 0px
+    margin: 20px 0px;
+    text-decoration: none;
 }
 
-.main-img
+.index-img
 {
     width: 100%;
     height: 150px;
@@ -215,16 +215,67 @@ body
     border-radius: 0px 0px 40px 0px;
 }
 
+
+/* ----- start of presvedcit se ----- */
+
 .presvedcit_se
 {
+    flex-direction: column;
     display: flex;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/media/background-CTAblock-4460w.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover, cover;
-    width: 100%;
-    height: 200px;
+    width: calc(100% - 2em);
+    height: min-content;
+    padding: 1em;
 }
 
+.presvedcit_se h3
+{
+    color: white;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.presvedcit_se a
+{
+    padding: 1em 2em;
+    color: white;
+    font-weight: bold;
+    width: min-content;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: #EB6C27;
+    margin-top: 1em;
+}
+
+/* ----- end of presvedcit se ----- */
+
+/* ----- start of reference ----- */
+
+.index-reference
+{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    width: calc(100% - 2em);
+    padding: 1em;
+}
+
+
+.index-gallery
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ----- end of reference ----- */
 
 /* ---------- END OF MAIN ---------- */
