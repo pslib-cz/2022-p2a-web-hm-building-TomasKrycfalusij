@@ -1,6 +1,6 @@
 *
 {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Open Sans';
     box-sizing: border-box;
 }
@@ -13,6 +13,12 @@ body
 p
 {
     margin: 0;
+}
+
+.paragraph
+{
+    display: block;
+    margin: 1em 0em;
 }
 
 /* ---------- START OF HEADER ---------- */
@@ -264,16 +270,29 @@ body
 
 /* ----- end of presvedcit se ----- */
 
-/* ----- start of reference ----- */
+/* ----- start of reference part ----- */
 
-.index-reference
+.container--padding
+{
+    align-items: left;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+
+.index-reference-gallery
 {
     display: flex;
     align-items: center;
     margin: 0;
     flex-direction: column;
     width: 100%;
-    padding: 1em;
+}
+
+
+.index-reference > p
+{
     margin-bottom: 3em;
 }
 
@@ -315,7 +334,7 @@ body
     margin-bottom: 2em;
 }
 
-/* ----- end of reference ----- */
+/* ----- end of reference part ----- */
 
 /* ---------- END OF MAIN ---------- */
 
@@ -323,30 +342,37 @@ body
 
 .index-footer
 {
-    height: 300px;
+    height: max-content;
     background-color: #EB6C27;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .index-footer h2
 {
+    margin: 0;
     margin-top: 3em;
+    font-size: 1.5em;
     color: white;
     text-align: center;
 }
 
 .index-footer p
 {
+    margin: 2em 0em;
     color: white;
-    font-size: 1.25em;
+    font-size: 1em;
     text-align: center;
 }
 
 .index-footer a
 {
-    margin-top: 3em;
+    margin-bottom: 2em;
     flex-shrink: 1;
 }
 
@@ -357,7 +383,49 @@ body
     font-size: 1.25em;
 }
 
+
+
+
 /* ---------- END OF FOOTER ---------- */
+
+/* ---------- START OF O_NAS PAGE ---------- */
+
+.page__o_nas
+{
+    align-items: left;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.page__o_nas ul
+{
+    padding-left: 2em;
+}
+
+.page__o_nas ul li::marker
+{
+    color: orange;
+    font-size: 2em;
+}
+
+/* ---------- END OF O_NAS PAGE ---------- */
+
+
+/* ---------- START OF REFERENCE PAGE ---------- */
+
+.page__refference p
+{
+    margin-bottom: 2em;
+}
+
+/* ---------- END OF REFERENCE PAGE ---------- */
+
+/* ---------- START OF SAMOOBCLUZNA_PRADELNA PAGE ---------- */
+
+
+
+/* ---------- END OF SAMOOBCLUZNA_PRADELNA PAGE ---------- */
 
 @media screen and (min-width: 1024px) {
     .index-header
@@ -365,7 +433,7 @@ body
         height: 80vh;
         padding: 4em 15em;
         width: 100%;
-        background-position: 0 0;
+        background-position: center center;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/pageheader-3100w.jpg);
     }
 }
