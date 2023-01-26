@@ -71,26 +71,26 @@
             Za kvalitu naší práce ručíme. </h3>
             <a href="" class="button button--orange">Přesvědčit se</a>
     </section>
-    <article class="index-reference">
-        <h2>Využijte škálu našich <span class="orange">služeb</span></h2>
+    <article class="container--padding index-reference">
+        <h2>Rádi vám ukážeme naše <span class="orange">reference</span></h2>
             <p>Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví.</b> To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
-        <div class="index-reference">
+        <div class="index-reference-gallery">
             <div class="reference__img r__img-1">
-                <img src="/media/reference/reference-hasicska-zbrojnice-600w.jpg">
+                <a href="hasicska_zbrojnice.html"><img src="/media/reference/reference-hasicska-zbrojnice-600w.jpg"></a>
                 <h3>Hasičská zbrojnice</h3>
                 <p>celková rekonstrukce</p>
             </div>
             <div class="reference__img r__img-2">
-                <img src="/media/reference/reference-pradelna-600w.jpg">
+                <a href="samoobsluzna_pradelna.html"><img src="/media/reference/reference-pradelna-600w.jpg"></a>
                 <h3>Samoobslužná prádelna</h3>
                 <p>stavební úpravy a opravy</p>
             </div>
             <div class="reference__img r__img-3">
-                <img src="/media/reference/reference-plocha-600w.jpg">
+                <a href="venkovni_plochy.html"><img src="/media/reference/reference-plocha-600w.jpg"></a>
                 <h3>Venkovní plochy restyl</h3>
                 <p>provedení venkovních ploch</p>
             </div>
-            <a href="" class="button button--orange">Více referencí</a>
+            <a href="reference.html" class="button button--orange">Více referencí</a>
         </div>
     </article>
     <footer class="index-footer">
@@ -100,3 +100,16 @@
     </footer>
 </body>
 </html>
+
+
+<script>
+    const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+    for (const btn of hamburgerButtons) {
+        btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list")
+            for (const menu of menus) {
+                menu.classList.toggle(".nav__menu--hidden")
+            }
+        }
+    }
+</script>
