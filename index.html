@@ -14,22 +14,15 @@
 <body>
     <header class="index-header">
         <nav class="navbar">
-            <img src="media/logo.png">
-            <div class="hamburger-menu">
-                <p>MENU</p>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="menu">
-                    <ul>
+            <a href="index.html"><img src="media/logo.png"></a>
+                <menu class="menu menu--hidden">
                         <li><a href="index.html"><span>DOMŮ</span></a></li>
                         <li><a href="">SLUŽBY</a></li>
                         <li><a href="reference.html">REFERENCE</a></li>
                         <li><a href="o_nas.html">O NÁS</a></li>
                         <li><a href="kontaktujte_nas.html">KONTAKT</a></li>
-                    </ul>
-                </div>
-            </div>
+                </menu>
+            <a href="javascript:void(0)" class="hamburger-button">MENU</a>
         </nav>
         <h1 class="title-h1">HM Building.cz s.r.o.</h1>
         <h3 class="title-h3">liberecká stavební společnost</h3>
@@ -103,12 +96,12 @@
 
 
 <script>
-    const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+    const hamburgerButtons = document.querySelectorAll(".hamburger-button");
     for (const btn of hamburgerButtons) {
         btn.onclick = (event) => {
-            const menus = document.querySelectorAll(".hamburger-menu-list")
+            const menus = document.querySelectorAll(".menu")
             for (const menu of menus) {
-                menu.classList.toggle(".nav__menu--hidden")
+                menu.classList.toggle("menu--hidden")
             }
         }
     }
