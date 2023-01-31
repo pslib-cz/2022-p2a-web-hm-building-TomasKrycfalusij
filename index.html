@@ -26,7 +26,19 @@
         </nav>
         <h1 class="title-h1">HM Building.cz s.r.o.</h1>
         <h3 class="title-h3">liberecká stavební společnost</h3>
-    </header>
+    </header>    
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-button");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu")
+                for (const menu of menus) {
+                    menu.classList.toggle("menu--hidden")
+                }
+            }
+        }
+    </script>
+
     <article class="index-article">
         <figure class="index-figure">
             <h2>Využijte škálu našich <span class="orange">služeb</span></h2>
@@ -93,16 +105,3 @@
     </footer>
 </body>
 </html>
-
-
-<script>
-    const hamburgerButtons = document.querySelectorAll(".hamburger-button");
-    for (const btn of hamburgerButtons) {
-        btn.onclick = (event) => {
-            const menus = document.querySelectorAll(".hamburger-menu")
-            for (const menu of menus) {
-                menu.classList.toggle("menu--hidden")
-            }
-        }
-    }
-</script>
