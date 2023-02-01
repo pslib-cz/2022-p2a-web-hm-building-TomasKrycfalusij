@@ -37,7 +37,6 @@ p
     background-repeat: no-repeat, no-repeat;
     background-position: center, center 40px;
     background-size: cover, cover;
-
 }
 
 body
@@ -77,22 +76,6 @@ body
     font-size: 0.75em;
 }
 
-.hamburger-menu
-{
-    display: flex;
-    height: min-content;
-    justify-content: left;
-    width: 87vw;
-    padding: 25px;
-    background-color: #EB6C27;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    flex-direction: column;
-}
-
 .hamburger-button
 {
     display: none;
@@ -105,14 +88,11 @@ body
 .hamburger-button::after
 {
     content: url(../media/hamburger.svg)
-
-
 }
 .hamburger-menu > li
 {
     list-style-type: none;
 }
-
 
 .hamburger-menu > li > a
 {
@@ -508,16 +488,79 @@ body
     margin-bottom: 2em;
 }
 
-
 /* ---------- END OF HASICSKA_ZBROJNICE PAGE ---------- */
 
+@media (max-width: 768px)
+{
+
+    .hamburger-button
+    {
+        display: flex;
+    }
+    .hamburger-menu
+    {
+    display: flex;
+    height: min-content;
+    justify-content: left;
+    width: 87vw;
+    padding: 25px;
+    background-color: #EB6C27;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    flex-direction: column;
+    }
+
+    .menu--hidden
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .reference__img > a
+    {
+        height: 200px;
+    }
+    .hamburger-menu
+    {
+        margin: 0;
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        position: static;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+    }
+    .hamburger-menu > li > a
+    {
+        color: dimgray;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .hamburger-menu li
+    {
+        margin: 0px 15px;
+    }
+    .hamburger-menu li:hover
+    {
+        background-color: #EB6C27;
+    }
+}
 
 @media screen and (min-width: 1024px)
 {
+
+
     .index-header
     {
         height: 80vh;
-        padding: 4em 15em;
+        padding: 4em 10em;
         width: 100%;
         background-position: center center;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/pageheader-3100w.jpg);
@@ -545,20 +588,9 @@ body
         background-position: center center, center center;
         transition: 0.5s;
     }
-}
 
-@media (max-width: 768px)
-{
-    .menu--hidden
+    .index-reference
     {
-        display: none;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
     }
-
-    .hamburger-button
-    {
-        display: flex;
-    }
-
 }
-
-/* 768 a víc 2 sloupce */
