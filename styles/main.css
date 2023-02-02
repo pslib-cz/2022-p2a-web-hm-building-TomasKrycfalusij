@@ -155,13 +155,8 @@ body
 
 .index-article
 {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
     margin: 0;
-    flex-direction: column;
     width: 100%;
-    padding: 1em;
 }
 
 .index-figure
@@ -273,6 +268,10 @@ body
     margin-bottom: 3em;
 }
 
+.container--padding > p
+{
+    margin-bottom: 3em;
+}
 
 .index-reference-gallery
 {
@@ -536,6 +535,7 @@ body
         justify-content: right;
         align-items: center;
         width: 100%;
+        height: 100%;
     }
     .hamburger-menu > li > a
     {
@@ -545,11 +545,42 @@ body
     }
     .hamburger-menu li
     {
-        margin: 0px 15px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        height: 100%;
     }
     .hamburger-menu li:hover
     {
         background-color: #EB6C27;
+    }
+
+    .index-article
+    {
+
+    }
+    .index-figure
+    {
+        margin: 0;
+        width: 50%
+    }
+    .index-figue--flex
+    {
+        display: flex;
+        align-items: center;
+        height: min-content;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .index-figue--flex--reverse
+    {
+        flex-direction: row-reverse;
+    }
+    .index-img
+    {
+        object-fit: cover;
+        width: 50%;
+        height: 300px;
     }
 }
 
