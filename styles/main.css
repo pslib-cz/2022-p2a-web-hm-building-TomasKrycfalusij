@@ -546,6 +546,10 @@ p
 /* TABLET */
 @media (min-width: 768px)
 {
+    .sluzby
+    {
+        margin-bottom: 100px;
+    }
     .name__container > h2
     {
         font-size: 2em;
@@ -617,9 +621,9 @@ p
     {
         object-fit: cover;
         width: 47%;
-        height: 300px;
+        height: 250px;
     }
-    .index-figue--flex
+    .index-figure--flex
     {
         display: flex;
         align-items: center;
@@ -627,8 +631,9 @@ p
         max-width: 1200px;
         margin: auto;
         justify-content: space-between;
+        margin-bottom: 50px;
     }
-    .index-figue--flex--reverse
+    .index-figure--flex--reverse
     {
         flex-direction: row-reverse;
     }
