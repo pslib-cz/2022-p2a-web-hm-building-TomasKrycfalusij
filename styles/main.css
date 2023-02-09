@@ -330,6 +330,7 @@ p
 
 .reference__img
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -337,7 +338,7 @@ p
     height: min-content;
 }
 
-.reference__img h3
+.reference__img > h4
 {
     font-size: 1.5em;
     margin: 0.5em 0;
@@ -455,7 +456,7 @@ p
 
 .r__img-3 > a
 {
-    background: linear-gradient(rgba(235, 108, 39, 0), rgba(235, 108, 39, 0)), url("../media/reference/reference-plocha-600w.jpg");
+    background: linear-gradient(transparent, transparent), url("../media/reference/reference-plocha-600w.jpg");
 }
 
 .reference__img > a
@@ -737,6 +738,40 @@ p
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-plocha-600w.jpg");
     }
 
+    .reference__img > h4
+    {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        display: none;
+        position: absolute;
+        color: white;
+        top: 35%;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
+
+    .reference__img > p
+    {
+        display: none;
+        position: absolute;
+        color: white;
+        top: 55%;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
+
+    .reference__img > a:hover ~ h4
+    {
+        display: block;
+    }
+
+    .reference__img > a:hover ~ p
+    {
+        display: block;
+    }
+
     .reference__img > a:hover
     {
         background-repeat: no-repeat, no-repeat;
@@ -745,16 +780,18 @@ p
         transition: 0.5s;
     }
 
-    .index-reference
-    {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        max-width: var(--max-width);
-    }
     .reference__img > a
     {
         width: 100%;
     }
+
+    .index-reference
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        max-width: var(--max-width);
+    }
+
     .page__o_nas ul
     {
         padding-left: 10em;
@@ -763,5 +800,19 @@ p
     {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (min-width: 1280px)
+{
+    .index-reference
+    {
+        grid-gap: 50px;
+    }
+
+    .reference__img > h4
+    {
+        font-size: 1.5em;
     }
 }
