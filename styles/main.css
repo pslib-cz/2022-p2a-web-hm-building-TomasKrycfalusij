@@ -235,7 +235,7 @@ p
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/media/background-CTAblock-4460w.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -574,11 +574,12 @@ p
     }
     .presvedcit_se
     {
+        align-items: center;
         height: 300px;
     }
     .presvedcit_se__content
     {
-        padding-left: 50px;
+        padding-left: 20px;
         width: 100%;
     }
     .navbar
