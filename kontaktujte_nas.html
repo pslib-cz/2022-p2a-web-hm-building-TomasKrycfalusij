@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Kontakt</title>
 </head>
 <body>
@@ -36,6 +37,97 @@
             }
         }
     </script>
+
+    <article class="container--padding">
+        <div class="name__container">
+            <h1>Kontaktujte nás</h1>
+            <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        </div>
+    </article>
+
+    <article class="container--padding">
+        <header class="section__header">
+            <p class="text">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        </header>
+
+        <div class="container--contact">
+                <div class="contact-row">
+                    <div class="contact_element">
+                        <img class="contact-container__icon" src="media/svg/phone.svg" alt="Telefonní číslo: ">
+    
+                        <a href="tel:+420775550564" class="contact-container__link">+420&nbsp;775&nbsp;550&nbsp;564</a>
+                    </div>
+                    <div class="contact_element">
+                        <img class="contact-container__icon" src="media/svg/mail.svg" alt="E-mail: ">
+    
+                        <a href="mailto:stavby@hm-building.cz" class="contact-container__link">stavby@hm-building.cz</a>
+                    </div>
+                    <div class="contact_element">
+                        <img class="contact-container__icon" src="media/svg/location.svg" alt="Adresa: ">
+    
+                        <a href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ" class="contact-container__link">
+                            Křižanská 12, Liberec XXII-Horní Suchá
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://en.mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=2&x=15.0014631&y=50.7603825&z=17" class="contact-container__map-wrapper">
+                <img src="./media/mapa.jpg" alt="Křižanská 12, Liberec XXII-Horní Suchá" class="contact-container__map">
+            </a>
+        </div>
+    </section>
+
+    <section class="section">
+        <header class="section__header">
+            <h2 class="section__heading">
+                Nezávazná poptávka služeb
+            </h2>
+            <p class="text">
+                Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.
+            </p>
+        </header>
+
+        <form action="#" class="form">
+            <div class="form__control">
+                <label for="name" class="form__label">Jméno a příjmení</label>
+                <input type="text" name="name" id="name" class="form__input">
+            </div>
+            
+            <div class="form__control">
+                <label for="email" class="form__label">E-mail</label>
+                <input type="email" name="email" id="email" class="form__input">
+            </div>
+
+            <div class="form__control">
+                <label for="telephone" class="form__label">Telefon</label>
+                <input type="tel" name="telephone" id="telephone" class="form__input">
+            </div>
+
+            <div class="form__control">
+                <label for="service_type" class="form__label">Poptávaná služba</label>
+                <select name="service_type" id="service_type" class="form__input">
+                    <option value="new_build">Novostavba</option>
+                    <option value="industrial_build">Průmyslová stavba</option>
+                    <option value="reconstruction">Rekonstrukce</option>
+                    <option value="roadworks">Komunikace a zpevněné plochy</option>
+                </select>
+            </div>
+            
+            
+            <div class="form__control">
+                <label for="note" class="form__label">Poznámka</label>
+                <textarea name="note" id="note" rows="10" class="form__input"></textarea>
+            </div>
+
+            <div class="form__control">
+                <input type="submit" value="Odeslat nezávaznou poptávku" class="form__submit-button button button--primary">
+            </div>
+        </form>
+    </article>
+
+    <script src="./scripts/toggle-navbar.js"></script>
+
 
 
     <footer class="index-footer">
