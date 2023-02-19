@@ -30,8 +30,9 @@ p
 {
     margin-bottom: 3em;
 }
-.name__container h1, h2
+.name__container > h1, span
 {
+    font-weight: 700;
     font-size: 1.75em;
 }
 .presvedcit-se__content > p
@@ -104,7 +105,6 @@ p
 
     .name__container > h1, span
     {
-        font-weight: 700;
         font-size: 3em;
     }
     .information-text h1
@@ -142,7 +142,7 @@ p
     {
         font-size: 1.5em;
     }
-    .reference__img > h4
+    .reference__img > .ref__description__header
     {
         font-size: 1.25em;
         text-transform: uppercase;
@@ -153,8 +153,9 @@ p
         left: 50%;
         width: max-content;
         transform: translateX(-50%);
+        z-index: 5;
     }
-    .reference__img > p
+    .reference__img > .ref__description_description
     {
         display: none;
         position: absolute;
@@ -164,12 +165,7 @@ p
         width: max-content;
         transform: translateX(-50%);
     }
-    .reference__img > a:hover ~ h4
-    {
-        display: block;
-    }
-
-    .reference__img > a:hover ~ p
+    .reference__img > span
     {
         display: block;
     }
@@ -178,7 +174,7 @@ p
 /* PC */
 @media screen and (min-width: 1280px)
 {
-    .reference__img > h4
+    .reference__img > span
     {
         font-size: 1.5em;
     }

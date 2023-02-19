@@ -36,7 +36,7 @@ body
     flex-direction: column;
     margin: 20px 0;
 }
-.index-figure > a
+.index-button
 {
     padding: 1em;
     border: dashed #EB6C27 1px;
@@ -46,6 +46,12 @@ body
     white-space: nowrap;
     margin: 20px 0px;
     text-decoration: none;
+    transition: 0.3s;
+}
+.index-button:hover
+{
+    background-color: #EB6C27;
+    color: white;
 }
 .index-img
 {
@@ -109,12 +115,22 @@ body
 
 .container--padding
 {
-    
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 1em;
 }
+
+.container--padding--left
+{
+    margin: auto;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1em;
+}
+
 .container--padding-bottom
 {
     padding-bottom: 3em;
@@ -158,12 +174,21 @@ body
     color:#EB6C27;
     background-color: white;
     font-size: 1.25em;
+    transition: 0.3s;
+}
+
+.button--index__footer:hover
+{
+    color: white;
+    background-color: #EB6C27;
+    border: 1px solid black;
 }
 
 
 /* ---------- end of footer ---------- */
 
 /* ---------- start of contact page ---------- */
+
 
 .contact-container__icon
 {
@@ -218,6 +243,16 @@ body
 {
     height: 15em;
 }
+
+.form__submit-button
+{
+    color: white;
+    background-color: #EB6C27;
+    border: none;
+    height: 70px;
+    font-size: 1.25em;
+}
+
 
 
 
@@ -323,6 +358,14 @@ body
 /* TABLET */
 @media (min-width: 768px)
 {
+    .contact-map__page
+    {
+        margin-left: auto;
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .form
     {
         width: 500px;
@@ -393,6 +436,7 @@ body
 /* NOTEBOOK */
 @media screen and (min-width: 1024px)
 {   
+    
     .name__container
     {
         text-align: center;
