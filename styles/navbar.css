@@ -108,7 +108,7 @@
     text-align: center;
 }
 
-.title-h3
+.title-p
 {
     text-align: center;
     position: absolute;
@@ -212,7 +212,7 @@
     {
         font-size: 5em;
     }
-    .title-h3
+    .title-p
     {
         font-size: 3em;
         bottom: 3.5em;

@@ -229,15 +229,17 @@ body
 /* ---------- START OF O_NAS PAGE ---------- */
 
 
-.page__o_nas ul
+.information-text ul
 {
     padding-left: 2em;
 }
-.page__o_nas ul li::marker
+.information-text li::marker
 {
     color: #EB6C27;
     font-size: 2em;
 }
+
+
 
 /* ---------- END OF O_NAS PAGE ---------- */
 
@@ -436,11 +438,16 @@ body
         max-width: var(--max-width);
     }
 
-    .page__o_nas ul
+    .information-text > ul
     {
         padding-left: 10em;
     }
-    .page__o_nas
+    .information-text > ul > ul
+    {
+        padding-left: 3em;
+        list-style-type: disc;
+    }
+    .information-text
     {
         max-width: var(--max-width);
     }
@@ -452,8 +459,5 @@ body
     .index-reference
     {
         grid-gap: 50px;
-    }
-    .container--padding
-    {
     }
 }
