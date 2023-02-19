@@ -262,7 +262,9 @@ body
 
 .reference__img
 {
+    position: relative;
     width: 100%;
+    margin-bottom: 8em;
 }
 .r__img-1
 {
@@ -291,6 +293,7 @@ body
 
 .photo_galery
 {
+    margin-top: 3em;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
@@ -349,10 +352,6 @@ body
         padding: 0;
         width: calc(100% - 2em);
         max-width: var(--max-width);
-    }
-    .reference__img > a
-    {
-        width: 100px;
     }
     .index-figure
     {

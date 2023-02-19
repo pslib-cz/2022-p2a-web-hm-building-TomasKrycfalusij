@@ -120,6 +120,28 @@
     line-height: 1;
 }
 
+.ref__description__header
+{
+    color: black;
+    width: max-content;
+    font-weight: 700;
+    position: absolute;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.ref__description_description
+{
+    color: black;
+    width: max-content;
+    position: absolute;
+    bottom: -5em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
 @media (max-width: 768px)
 {
 
