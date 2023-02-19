@@ -93,8 +93,7 @@
 
 .header__button
 {
-    display: inline-block;
-    position: absolute;
+    display: none;
 }
 
 .title-h1
@@ -209,10 +208,6 @@
 
 @media screen and (min-width: 1024px)
 {
-    .index-header
-    {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../media/pageheader-3100w.jpg);
-    }
     .title-h1
     {
         font-size: 5em;
@@ -224,7 +219,8 @@
     }
     .index-header
     {
-        height: 900px;
+        height: 90vh;
+        min-height: 500px;
         padding: 4em 10em;
         background-position: center center;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../media/pageheader-3100w.jpg);
@@ -235,5 +231,18 @@
         padding: 2em 6em;
         background-position: center center;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../media/pageheader-3100w.jpg);
+    }
+    .header__button
+    {
+        display: block;
+        position: absolute;
+        bottom: 2em;
+        background-color: #EB6C27;
+    }
+
+    .header__button > span
+    {
+        font-size: 1.5em;
+        color: white;
     }
 }
