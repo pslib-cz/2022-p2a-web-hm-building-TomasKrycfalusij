@@ -2,17 +2,15 @@ h1, h2, h3, h4, span, p
 {
     line-height: 1.5;
 }
-
 html
 {
     font-family: 'Open Sans';
 }
-
 p
 {
     margin: 0;
 }
-.index-figure h3, h2
+.index-figure > h3, h2
 {
     font-size: 1.5em;
 }
@@ -36,20 +34,22 @@ p
 {
     font-size: 1.75em;
 }
-.index-footer > h2
+
+.index-footer > p:nth-child(2)
 {
-    margin: 0;
-    margin-top: 3em;
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-}
-.index-footer > p
-{
-    margin: 2em 0em;
+    margin: 1em 0em;
     color: white;
     font-size: 1em;
     text-align: center;
+}
+.footer__p
+{
+    text-align: center;
+    margin: 0;
+    margin-top: 2em;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 700;
 }
 .index-footer a
 {
@@ -98,17 +98,27 @@ p
 /* TABLET */
 @media (min-width: 768px)
 {
-    .name__container > h1, h2
+
+    .name__container > h1, span
     {
+        font-weight: 700;
         font-size: 3em;
     }
     .page__o_nas h1
     {
         text-align: center;
     }
-    .index-figure h3
+    .index-figure h2
     {
         text-transform: uppercase;
+    }
+    .footer__p
+    {
+        font-size: 2em;
+    }
+    .index-footer > p:nth-child(2)
+    {
+        font-size: 1.25em;
     }
 }
 
@@ -116,6 +126,14 @@ p
 /* NOTEBOOK */
 @media screen and (min-width: 1024px)
 {
+    .footer__p
+    {
+        font-size: 4em;
+    }
+    .index-footer > p:nth-child(2)
+    {
+        font-size: 1.5em;
+    }
     .reference__img > h4
     {
         font-size: 1.25em;
