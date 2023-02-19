@@ -49,15 +49,15 @@
         <div class="container--padding">
             <div class="contact-row">
                 <div class="contact_element">
-                    <!--<img class="contact-container__icon" src="media/svg/phone.png" alt="Telefonní číslo: ">-->
+                    <img class="contact-container__icon" src="media/svg/phone.png" alt="Telefonní číslo: ">
                     <a href="tel:+420775550564" class="contact__text">+420&nbsp;775&nbsp;550&nbsp;564</a>
                 </div>
                 <div class="contact_element">
-                    <!--<img class="contact-container__icon" src="media/svg/mail.png" alt="E-mail: ">-->
+                    <img class="contact-container__icon" src="media/svg/mail.png" alt="E-mail: ">
                     <a href="mailto:stavby@hm-building.cz" class="contact__text">stavby@hm-building.cz</a>
                 </div>
                 <div class="contact_element">
-                    <!--<img class="contact-container__icon" src="media/svg/location.png" alt="Adresa: ">-->
+                    <img class="contact-container__icon" src="media/svg/location.png" alt="Adresa: ">
                     <a href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ" class="contact__text">
                         Křižanská 12, Liberec XXII-Horní Suchá
                     </a>
@@ -70,32 +70,26 @@
     </div>
 
     <div class="container--padding container--padding-bottom">
-        <header class="section__header">
-            <h2 class="section__heading">
-                Nezávazná poptávka služeb
-            </h2>
-            <p class="text">
-                Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.
-            </p>
-        </header>
+        <h2>Nezávazná poptávka služeb</h2>
+        <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
 
         <form action="#" class="form">
-            <div class="form__control">
+            <div class="form__row">
                 <label for="name" class="form__label">Jméno a příjmení</label>
                 <input type="text" name="name" id="name" class="form__input">
             </div>
             
-            <div class="form__control">
+            <div class="form__row">
                 <label for="email" class="form__label">E-mail</label>
                 <input type="email" name="email" id="email" class="form__input">
             </div>
 
-            <div class="form__control">
+            <div class="form__row">
                 <label for="telephone" class="form__label">Telefon</label>
                 <input type="tel" name="telephone" id="telephone" class="form__input">
             </div>
 
-            <div class="form__control">
+            <div class="form__row">
                 <label for="service_type" class="form__label">Poptávaná služba</label>
                 <select name="service_type" id="service_type" class="form__input">
                     <option value="new_build">Novostavba</option>
@@ -104,14 +98,11 @@
                     <option value="roadworks">Komunikace a zpevněné plochy</option>
                 </select>
             </div>
-            
-            
-            <div class="form__control">
+            <div class="form__row">
                 <label for="note" class="form__label">Poznámka</label>
-                <textarea name="note" id="note" rows="10" class="form__input"></textarea>
+                <textarea name="note" id="note" rows="10" class="form__input poznamka"></textarea>
             </div>
-
-            <div class="form__control">
+            <div class="form__row">
                 <input type="submit" value="Odeslat nezávaznou poptávku" class="form__submit-button button button--primary">
             </div>
         </form>

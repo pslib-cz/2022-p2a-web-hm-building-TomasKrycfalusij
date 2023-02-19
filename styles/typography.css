@@ -1,3 +1,13 @@
+h1, h2, h3, h4, span, p
+{
+    line-height: 1.5;
+}
+
+html
+{
+    font-family: 'Open Sans';
+}
+
 p
 {
     margin: 0;
@@ -24,9 +34,9 @@ p
 }
 .name__container h1, h2
 {
-    font-size: 2em;
+    font-size: 1.75em;
 }
-.index-footer h2
+.index-footer > h2
 {
     margin: 0;
     margin-top: 3em;
@@ -34,7 +44,7 @@ p
     color: white;
     text-align: center;
 }
-.index-footer p
+.index-footer > p
 {
     margin: 2em 0em;
     color: white;

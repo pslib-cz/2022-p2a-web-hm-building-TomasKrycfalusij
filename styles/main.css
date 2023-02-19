@@ -3,16 +3,6 @@
     --max-width: 1300px;
 }
 
-*
-{
-    line-height: 1.5;
-}
-
-html
-{
-    font-family: 'Open Sans';
-}
-
 body
 {
     margin: 0;
@@ -169,40 +159,64 @@ body
 
 /* ---------- end of footer ---------- */
 
+/* ---------- start of contact page ---------- */
+
+.contact-container__icon
+{
+    height: 30px;
+    margin-right: 1em;
+}
+.contact_element
+{
+    display: flex;
+    align-items: center;
+    margin: 2em 0em;
+}
+.contact-map__page__map
+{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.contact__text
+{
+    text-decoration: none;
+    color: #EB6C27;
+    font-weight: 700;
+}
 .form__input
 {
     width: 200px;
     resize: none;
 }
 
-/* ---------- start of contact page ---------- */
-
-.contact-container__icon
+.form__input
 {
-    height: 30px;
-    top: 10px;
-}
-.contact_element
-{
-    margin: 2em 0em;
-}
-.contact-container__icon
-{
-    font-size: 0;
-}
-.contact__text::before
-{
-    content: "";
-    background-image: url(../media/svg/phone.png);
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    width: 40px;
-    height: 30px;
-}
-.contact-map__page__map
-{
+    width: 50%;
+    height: 3em;
+    margin-bottom: 1em;
+    border: 1px solid rgba(235, 108, 39, 0.8);
     width: 100%;
 }
+
+.form__label
+{
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.form__row
+{
+    display: flex;
+    flex-direction: column;
+}
+.poznamka
+{
+    height: 15em;
+}
+
+
+
 
 /* ---------- end of contact page ---------- */
 
@@ -309,6 +323,10 @@ body
 /* TABLET */
 @media (min-width: 768px)
 {
+    .form
+    {
+        width: 500px;
+    }
     .container--padding-bottom
     {
         padding-bottom: 15em;
@@ -367,6 +385,10 @@ body
     .name__container
     {
         text-align: center;
+    }
+    .contact-map__page__map
+    {
+        max-height: 500px;
     }
 }
 
