@@ -106,7 +106,6 @@ p
     font-weight: 700;
     font-size: 1.5em;
 }
-
 .ref__description__description
 {
     bottom: -5em;
@@ -155,9 +154,31 @@ p
     {
         font-size: 1.5em;
     }
+
+
+    .reference__img > p
+    {
+        display: none;
+        color: white
+    }
+    .reference__img:hover > p
+    {
+        display: block
+    }
+
+    .ref__description__header
+    {
+        top: 35%;
+    }
+    .ref__description__description
+    {
+        top: 50%;
+    }
+
 }
 
 /* PC */
 @media screen and (min-width: 1280px)
 {
+    
 }

@@ -260,8 +260,19 @@
         position: absolute;
         bottom: 2em;
         background-color: #EB6C27;
+        transition: 0.3s;
     }
 
+    .header__button:hover
+    {
+        background-color: white;
+        color: orange;
+    }
+    .header__button:hover > span
+    {
+        background-color: white;
+        color: #EB6C27;
+    }
     .header__button > span
     {
         font-size: 1.5em;
