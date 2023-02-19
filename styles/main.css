@@ -143,16 +143,6 @@ p
 
 /* ----- end of presvedcit se ----- */
 
-/* ----- start of reference part ----- */
-
-.index-reference
-{
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-}
-
 .container--padding
 {
     display: flex;
@@ -179,43 +169,21 @@ p
     flex-direction: column;
 }
 
-.index-reference > p
+.name__container
+{
+    max-width: 900px;
+    text-align: left;
+}
+
+.name__container__margin--bottom
 {
     margin-bottom: 3em;
 }
 
-.index-gallery
+.name__container h1
 {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
+    font-size: 2em;
 }
-
-.reference__img
-{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    height: min-content;
-}
-
-.reference__img > h4
-{
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-.reference__img p
-{
-    font-size: 1em;
-    margin-bottom: 2em;
-}
-
-/* ----- end of reference part ----- */
 
 /* ---------- end of main ---------- */
 
@@ -272,7 +240,7 @@ p
     resize: none;
 }
 
-/* ---------- start of contakt page ---------- */
+/* ---------- start of contact page ---------- */
 
 .contact-container__icon
 {
@@ -314,7 +282,7 @@ p
     width: 100%;
 }
 
-/* ---------- end of contakt page ---------- */
+/* ---------- end of contact page ---------- */
 
 /* ---------- END OF INDEX PAGE ---------- */
 
@@ -344,30 +312,75 @@ p
 
 /* ---------- START OF REFERENCE PAGE ---------- */
 
+.index-reference
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.index-reference p
+{
+    margin-bottom: 3em;
+}
+
+.index-gallery
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+.reference__img
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    height: min-content;
+}
+
+.reference__img > h4
+{
+    color: black;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+
+.reference__img > p
+{
+    color: black;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+
 .reference__img
 {
     width: 100%;
 }
 
 
-.r__img-1 > a
+.r__img-1
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-hasicska-zbrojnice-600w.jpg");
 }
 
-.r__img-2 > a
+.r__img-2
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-pradelna-600w.jpg");
 }
 
-.r__img-3 > a
+.r__img-3
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-plocha-600w.jpg");
 }
 
-.reference__img > a
+.reference__img
 {
-    width: 100%;
     height: 250px;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
@@ -375,32 +388,10 @@ p
     transition: 0.5s;
 }
 
-.r__img-2:hover a
-{
-    background-color: #EB6C27;
-}
-
 .page__refference p
 {
     margin-bottom: 2em;
 }
-
-.name__container
-{
-    max-width: 900px;
-    text-align: left;
-}
-
-.name__container__margin--bottom
-{
-    margin-bottom: 3em;
-}
-
-.name__container h1
-{
-    font-size: 2em;
-}
-
 
 /* ---------- END OF REFERENCE PAGE ---------- */
 
@@ -449,23 +440,23 @@ p
 
 /* ---------- END OF HASICSKA_ZBROJNICE PAGE ---------- */
 
-@media (max-width: 768px)
-{
-
-}
 
 /* TABLET */
 @media (min-width: 768px)
 {
+    .container--padding-bottom
+    {
+        padding-bottom: 5em;
+    }
+    .index-reference
+    {
+        flex-direction: row;
+    }
     .photo_galery
     {
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
         grid-auto-flow: initial dense;
-    }
-    .sluzby
-    {
-        margin-bottom: 100px;
     }
     .name__container > h2
     {
@@ -480,6 +471,10 @@ p
         margin: 5em 0em;
         padding-left: 20px;
     }
+    .index-reference
+    {
+        grid-gap: 30px;
+    }
     .page__o_nas h1
     {
         text-align: center;
@@ -488,7 +483,6 @@ p
     {
         width: 100px;
     }
-
     .index-figure
     {
         margin: 0;
@@ -544,17 +538,17 @@ p
         width: 95%;
         max-width: var(--max-width);
     }
-    .r__img-1 > a:hover
+    .r__img-1:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-hasicska-zbrojnice-600w.jpg");
     }
 
-    .r__img-2 > a:hover
+    .r__img-2:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-pradelna-600w.jpg");
     }
 
-    .r__img-3 > a:hover
+    .r__img-3:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-plocha-600w.jpg");
     }
@@ -565,7 +559,7 @@ p
         text-transform: uppercase;
         display: none;
         position: absolute;
-        color: white;
+        color: black;
         top: 35%;
         left: 50%;
         width: max-content;
@@ -601,14 +595,9 @@ p
         transition: 0.5s;
     }
 
-    .reference__img > a
-    {
-    }
-
     .index-reference
     {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
+        width: 100%;
         max-width: var(--max-width);
     }
 
