@@ -5,8 +5,6 @@
 
 *
 {
-
-    box-sizing: border-box;
     line-height: 1.5;
 }
 
@@ -44,7 +42,6 @@ p
 .index-article
 {
     margin: 0;
-    width: 100%;
 }
 
 .index-figure
@@ -52,7 +49,6 @@ p
     display: flex;
     align-items: left;
     flex-direction: column;
-    width: 100%;
     margin: 20px 0;
 }
 
@@ -109,7 +105,7 @@ p
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover, cover;
-    width: 100%;
+
 }
 
 .presvedcit_se__content
@@ -151,7 +147,7 @@ p
 
 .index-reference
 {
-    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
@@ -161,10 +157,13 @@ p
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 1em;
-    width: 100%;
-    margin-bottom: 3em;
+}
+
+.container--padding-bottom
+{
+    padding-bottom: 3em;
 }
 
 .container--padding > p
@@ -178,7 +177,6 @@ p
     align-items: center;
     margin: 0;
     flex-direction: column;
-    width: 100%;
 }
 
 .index-reference > p
@@ -193,7 +191,6 @@ p
     align-items: center;
     margin: 0;
     flex-direction: column;
-    width: 100%;
 }
 
 .reference__img
@@ -202,7 +199,7 @@ p
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+
     height: min-content;
 }
 
@@ -234,7 +231,6 @@ p
     padding: 1em;
     position: relative;
     bottom: 0;
-    width: 100%;
 }
 
 .index-footer h2
@@ -276,29 +272,58 @@ p
     resize: none;
 }
 
-/* ---------- start of kontakt page ---------- */
+/* ---------- start of contakt page ---------- */
 
+.contact-container__icon
+{
+    height: 30px;
+    top: 10px;
+}
 
+.contact_element
+{
+    margin: 2em 0em;
+}
 
+.contact-container__icon
+{
+    font-size: 0;
+}
 
-/* ---------- end of kontakt page ---------- */
+.contact__text
+{
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    color: #EB6C27;
+    font-size: 1em;
+}
+
+.contact__text::before
+{
+    content: "";
+    background-image: url(../media/svg/phone.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 40px;
+    height: 30px;
+}
+
+.contact-map__page__map
+{
+    width: 100%;
+}
+
+/* ---------- end of contakt page ---------- */
 
 /* ---------- END OF INDEX PAGE ---------- */
 
 /* ---------- START OF O_NAS PAGE ---------- */
 
-.page__o_nas
-{
-    margin: auto;
-    padding: 1em;
-    width: 100%;
-    margin-bottom: 30px;
-    max-width: var(--max-width);
-}
 
 .page__o_nas h1
 {
-    text-align: center;
+    text-align: left;
     font-size: 2.5em;
 }
 
@@ -363,8 +388,12 @@ p
 .name__container
 {
     max-width: 900px;
-    margin-bottom: 30px;
     text-align: left;
+}
+
+.name__container__margin--bottom
+{
+    margin-bottom: 3em;
 }
 
 .name__container h1
@@ -384,7 +413,6 @@ p
 
 .photo_galery
 {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
@@ -446,17 +474,19 @@ p
     .presvedcit_se
     {
         align-items: center;
-        height: 300px;
     }
     .presvedcit_se__content
     {
+        margin: 5em 0em;
         padding-left: 20px;
-        width: 100%;
     }
-    
+    .page__o_nas h1
+    {
+        text-align: center;
+    }
     .reference__img > a
     {
-        width: 600px;
+        width: 100px;
     }
 
     .index-figure
@@ -486,7 +516,7 @@ p
     }
     .name__container
     {
-        margin-bottom: 100px;
+        margin-bottom: 5em;
         text-align: center;
     }
     .index-figure h3
@@ -506,10 +536,6 @@ p
     .name__container > h2
     {
         font-size: 3em;
-    }
-    .presvedcit_se
-    {
-        height: 400px;
     }
 
     .presvedcit_se__content
@@ -577,7 +603,6 @@ p
 
     .reference__img > a
     {
-        width: 100%;
     }
 
     .index-reference
