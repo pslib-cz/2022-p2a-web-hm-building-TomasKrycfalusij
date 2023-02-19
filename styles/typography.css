@@ -75,12 +75,6 @@ p
     font-size: 1.5em;
     margin: 0.5em 0;
 }
-.reference__img > p
-{
-    color: black;
-    font-size: 1em;
-    margin-bottom: 2em;
-}
 .page__refference p
 {
     margin-bottom: 2em;
@@ -97,7 +91,26 @@ p
 {
     margin-bottom: 2em;
 }
+.reference__img > p
+{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.ref__description__header
+{
+    bottom: -2em;
+    font-weight: 700;
+    font-size: 1.5em;
+}
 
+.ref__description__description
+{
+    bottom: -5em;
+}
 
 /* TABLET */
 @media (min-width: 768px)
@@ -142,40 +155,9 @@ p
     {
         font-size: 1.5em;
     }
-    .reference__img > .ref__description__header
-    {
-        font-size: 1.25em;
-        text-transform: uppercase;
-        display: none;
-        position: absolute;
-        color: black;
-        top: 35%;
-        left: 50%;
-        width: max-content;
-        transform: translateX(-50%);
-        z-index: 5;
-    }
-    .reference__img > .ref__description_description
-    {
-        display: none;
-        position: absolute;
-        color: white;
-        top: 55%;
-        left: 50%;
-        width: max-content;
-        transform: translateX(-50%);
-    }
-    .reference__img > span
-    {
-        display: block;
-    }
 }
 
 /* PC */
 @media screen and (min-width: 1280px)
 {
-    .reference__img > span
-    {
-        font-size: 1.5em;
-    }
 }

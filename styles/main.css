@@ -109,6 +109,13 @@ body
 .button--orange
 {
     background-color: #EB6C27;
+    transition: 0.3s;
+}
+
+.button--orange:hover
+{
+    color: #EB6C27;
+    background-color: white;
 }
 
 /* ----- end of presvedcit se ----- */
