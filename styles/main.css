@@ -262,15 +262,6 @@ body
 
 .reference__img
 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    height: min-content;
-}
-.reference__img
-{
     width: 100%;
 }
 .r__img-1
@@ -424,7 +415,7 @@ body
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-plocha-600w.jpg");
     }
-    .reference__img > a:hover
+    .reference__img:hover
     {
         background-repeat: no-repeat, no-repeat;
         background-size: cover, cover;
@@ -440,7 +431,7 @@ body
 
     .information-text > ul
     {
-        padding-left: 10em;
+        padding-left: 7em;
     }
     .information-text > ul > ul
     {
@@ -449,6 +440,7 @@ body
     }
     .information-text
     {
+        width: 100%;
         max-width: var(--max-width);
     }
 }
