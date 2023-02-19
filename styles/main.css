@@ -18,11 +18,6 @@ body
     margin: 0;
 }
 
-p
-{
-    margin: 0;
-}
-
 .light
 {
     font-weight: 300;
@@ -51,12 +46,6 @@ p
     flex-direction: column;
     margin: 20px 0;
 }
-
-.index-figure h3, h2
-{
-    font-size: 1.5em;
-}
-
 .index-figure a
 {
     padding: 1em;
@@ -68,34 +57,24 @@ p
     margin: 20px 0px;
     text-decoration: none;
 }
-
 .index-img
 {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
-
-.orange
-{
-    color: #EB6C27;
-    font-size: 1em;
-}
-
 .bl-corner
 {
     border-radius: 0px 0px 0px 40px;
 }
-
 .br-corner
 {
     border-radius: 0px 0px 40px 0px;
 }
 
-
 /* ----- start of presvedcit se ----- */
 
-.presvedcit_se
+.presvedcit-se
 {
     display: flex;
     flex-direction: column;
@@ -107,24 +86,16 @@ p
     background-size: cover, cover;
 
 }
-
-.presvedcit_se__content
+.presvedcit-se__content
 {
+    padding-left: 1em;
+    max-width: var(--max-width);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
     flex-grow: 0;
 }
-
-.presvedcit_se h3
-{
-    color: white;
-    font-weight: 700;
-    font-size: 1.25em;
-    margin: 0;
-}
-
 .button
 {
     padding: 1em 2em;
@@ -135,7 +106,6 @@ p
     text-decoration: none;
     margin-top: 1em;
 }
-
 .button--orange
 {
     background-color: #EB6C27;
@@ -145,22 +115,16 @@ p
 
 .container--padding
 {
+    
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 1em;
 }
-
 .container--padding-bottom
 {
     padding-bottom: 3em;
 }
-
-.container--padding > p
-{
-    margin-bottom: 3em;
-}
-
 .index-reference-gallery
 {
     display: flex;
@@ -179,12 +143,6 @@ p
 {
     margin-bottom: 3em;
 }
-
-.name__container h1
-{
-    font-size: 2em;
-}
-
 /* ---------- end of main ---------- */
 
 /* ---------- start of footer ---------- */
@@ -200,30 +158,6 @@ p
     position: relative;
     bottom: 0;
 }
-
-.index-footer h2
-{
-    margin: 0;
-    margin-top: 3em;
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-}
-
-.index-footer p
-{
-    margin: 2em 0em;
-    color: white;
-    font-size: 1em;
-    text-align: center;
-}
-
-.index-footer a
-{
-    margin-bottom: 2em;
-    flex-shrink: 1;
-}
-
 .button--index__footer
 {
     color:#EB6C27;
@@ -247,26 +181,14 @@ p
     height: 30px;
     top: 10px;
 }
-
 .contact_element
 {
     margin: 2em 0em;
 }
-
 .contact-container__icon
 {
     font-size: 0;
 }
-
-.contact__text
-{
-    display: flex;
-    text-decoration: none;
-    font-weight: 700;
-    color: #EB6C27;
-    font-size: 1em;
-}
-
 .contact__text::before
 {
     content: "";
@@ -276,7 +198,6 @@ p
     width: 40px;
     height: 30px;
 }
-
 .contact-map__page__map
 {
     width: 100%;
@@ -289,18 +210,10 @@ p
 /* ---------- START OF O_NAS PAGE ---------- */
 
 
-.page__o_nas h1
-{
-    text-align: left;
-    font-size: 2.5em;
-}
-
-
 .page__o_nas ul
 {
     padding-left: 2em;
 }
-
 .page__o_nas ul li::marker
 {
     color: #EB6C27;
@@ -317,12 +230,6 @@ p
     display: flex;
     flex-direction: column;
 }
-
-.index-reference p
-{
-    margin-bottom: 3em;
-}
-
 .index-gallery
 {
     display: grid;
@@ -341,44 +248,22 @@ p
     text-decoration: none;
     height: min-content;
 }
-
-.reference__img > h4
-{
-    color: black;
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-
-.reference__img > p
-{
-    color: black;
-    font-size: 1em;
-    margin-bottom: 2em;
-}
-
-
 .reference__img
 {
     width: 100%;
 }
-
-
 .r__img-1
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-hasicska-zbrojnice-600w.jpg");
 }
-
 .r__img-2
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-pradelna-600w.jpg");
 }
-
 .r__img-3
 {
     background: linear-gradient(transparent, transparent), url("../media/reference/reference-plocha-600w.jpg");
 }
-
 .reference__img
 {
     height: 250px;
@@ -388,19 +273,9 @@ p
     transition: 0.5s;
 }
 
-.page__refference p
-{
-    margin-bottom: 2em;
-}
-
 /* ---------- END OF REFERENCE PAGE ---------- */
 
 /* ---------- START OF SAMOOBSLUZNA_PRADELNA PAGE ---------- */
-
-.page__samoobsluzna_pradelna > p
-{
-    margin-bottom: 2em;
-}
 
 .photo_galery
 {
@@ -409,12 +284,10 @@ p
     grid-gap: 5px;
     grid-auto-flow: dense;
 }
-
 .photo_galery img
 {
     width: 100%;
 }
-
 .height-3
 {
     grid-row-end: span 3;
@@ -424,19 +297,10 @@ p
 
 /* ---------- START OF VENKOVNI_PLOCHY PAGE ---------- */
 
-.page__venkovni_plochy > p
-{
-    margin-bottom: 2em;
-}
 
 /* ---------- END OF VENKOVNI_PLOCHY PAGE ---------- */
 
 /* ---------- START OF HASICSKA_ZBROJNICE PAGE ---------- */
-
-.page__hasicska_zbrojnice > p
-{
-    margin-bottom: 2em;
-}
 
 /* ---------- END OF HASICSKA_ZBROJNICE PAGE ---------- */
 
@@ -451,6 +315,7 @@ p
     .index-reference
     {
         flex-direction: row;
+        grid-gap: 30px;
     }
     .photo_galery
     {
@@ -458,26 +323,16 @@ p
         grid-gap: 15px;
         grid-auto-flow: initial dense;
     }
-    .name__container > h2
-    {
-        font-size: 2em;
-    }
-    .presvedcit_se
+    .presvedcit-se
     {
         align-items: center;
     }
-    .presvedcit_se__content
+    .presvedcit-se__content
     {
         margin: 5em 0em;
-        padding-left: 20px;
-    }
-    .index-reference
-    {
-        grid-gap: 30px;
-    }
-    .page__o_nas h1
-    {
-        text-align: center;
+        padding: 0;
+        width: calc(100% - 2em);
+        max-width: var(--max-width);
     }
     .reference__img > a
     {
@@ -510,83 +365,34 @@ p
     }
     .name__container
     {
-        margin-bottom: 5em;
         text-align: center;
-    }
-    .index-figure h3
-    {
-        text-transform: uppercase;
     }
 }
 
 /* NOTEBOOK */
 @media screen and (min-width: 1024px)
 {   
+    .name__container
+    {
+        text-align: center;
+    }
     .photo_galery
     {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: var(--max-width);
-    }
-    .name__container > h2
-    {
-        font-size: 3em;
-    }
-
-    .presvedcit_se__content
-    {
-        padding: 0;
-        width: 95%;
         max-width: var(--max-width);
     }
     .r__img-1:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-hasicska-zbrojnice-600w.jpg");
     }
-
     .r__img-2:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-pradelna-600w.jpg");
     }
-
     .r__img-3:hover
     {
         background: linear-gradient(rgba(235, 108, 39, 0.8), rgba(235, 108, 39, 0.8)), url("../media/reference/reference-plocha-600w.jpg");
     }
-
-    .reference__img > h4
-    {
-        font-size: 1.25em;
-        text-transform: uppercase;
-        display: none;
-        position: absolute;
-        color: black;
-        top: 35%;
-        left: 50%;
-        width: max-content;
-        transform: translateX(-50%);
-    }
-
-    .reference__img > p
-    {
-        display: none;
-        position: absolute;
-        color: white;
-        top: 55%;
-        left: 50%;
-        width: max-content;
-        transform: translateX(-50%);
-    }
-
-    .reference__img > a:hover ~ h4
-    {
-        display: block;
-    }
-
-    .reference__img > a:hover ~ p
-    {
-        display: block;
-    }
-
     .reference__img > a:hover
     {
         background-repeat: no-repeat, no-repeat;
@@ -607,21 +413,18 @@ p
     }
     .page__o_nas
     {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        max-width: var(--max-width);
     }
 }
 
-
+/* PC */
 @media screen and (min-width: 1280px)
 {
     .index-reference
     {
         grid-gap: 50px;
     }
-
-    .reference__img > h4
+    .container--padding
     {
-        font-size: 1.5em;
     }
 }

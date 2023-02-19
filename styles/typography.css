@@ -1,0 +1,149 @@
+p
+{
+    margin: 0;
+}
+.index-figure h3, h2
+{
+    font-size: 1.5em;
+}
+.orange
+{
+    color: #EB6C27;
+    font-size: 1em;
+}
+.presvedcit-se p
+{
+    color: white;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 0;
+}
+.container--padding > p
+{
+    margin-bottom: 3em;
+}
+.name__container h1, h2
+{
+    font-size: 2em;
+}
+.index-footer h2
+{
+    margin: 0;
+    margin-top: 3em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+.index-footer p
+{
+    margin: 2em 0em;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.index-footer a
+{
+    margin-bottom: 2em;
+    flex-shrink: 1;
+}
+.page__o_nas h1
+{
+    text-align: left;
+    font-size: 2.5em;
+}
+.index-reference p
+{
+    margin-bottom: 3em;
+}
+.reference__img > h4
+{
+    color: black;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+.reference__img > p
+{
+    color: black;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+.page__refference p
+{
+    margin-bottom: 2em;
+}
+.page__samoobsluzna_pradelna > p
+{
+    margin-bottom: 2em;
+}
+.page__venkovni_plochy > p
+{
+    margin-bottom: 2em;
+}
+.page__hasicska_zbrojnice > p
+{
+    margin-bottom: 2em;
+}
+
+
+/* TABLET */
+@media (min-width: 768px)
+{
+    .name__container > h1, h2
+    {
+        font-size: 3em;
+    }
+    .page__o_nas h1
+    {
+        text-align: center;
+    }
+    .index-figure h3
+    {
+        text-transform: uppercase;
+    }
+}
+
+
+/* NOTEBOOK */
+@media screen and (min-width: 1024px)
+{
+    .reference__img > h4
+    {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        display: none;
+        position: absolute;
+        color: black;
+        top: 35%;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
+    .reference__img > p
+    {
+        display: none;
+        position: absolute;
+        color: white;
+        top: 55%;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
+    .reference__img > a:hover ~ h4
+    {
+        display: block;
+    }
+
+    .reference__img > a:hover ~ p
+    {
+        display: block;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1280px)
+{
+    .reference__img > h4
+    {
+        font-size: 1.5em;
+    }
+}
