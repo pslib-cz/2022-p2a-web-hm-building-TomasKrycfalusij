@@ -219,7 +219,7 @@
     }
     .index-header
     {
-        height: 90vh;
+        height: calc(100vh - 4em * 2);
         min-height: 500px;
         padding: 4em 10em;
         background-position: center center;
